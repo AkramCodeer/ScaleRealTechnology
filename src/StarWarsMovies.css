@@ -1,0 +1,87 @@
+.star-wars-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  
+}
+
+.star-wars-movies {
+  width: 40%;
+  box-sizing: border-box;
+}
+
+.search-and-sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sort-section {
+  display: flex;
+  align-items: center;
+}
+
+select {
+  margin-right: 10px;
+  padding: 8px;
+}
+
+input,
+button {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button.highlight-on-hover:hover {
+  background-color: #1890ff;
+  color: white;
+  cursor: pointer;
+}
+
+.movie-title {
+  list-style: none;
+  cursor: pointer;
+}
+
+.movie-info {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f2f2dd;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+
+}
+
+.movie-info:hover {
+  background-color: #dcdcdc; /* Darker background color on hover */
+}
+
+.episode,
+.year ,
+.title{
+  text-align: center;
+}
+
+.movie-details {
+  width: 50%;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .star-wars-movies,
+  .movie-details {
+    width: 100%;
+  }
+}
+
+.movie-selected{
+  display: flex;
+  justify-content: flex-end;
+  justify-items: center;
+}
